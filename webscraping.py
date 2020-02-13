@@ -47,7 +47,7 @@ def buildrank(type):
 
 option = Options()
 option.headless = True
-driver = webdriver.Firefox()
+driver = webdriver.Firefox(options=option)
 
 driver.get(url)
 time.sleep(10)  # in seconds
