@@ -1,4 +1,3 @@
-import time
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -50,7 +49,7 @@ option.headless = True
 driver = webdriver.Firefox(options=option)
 
 driver.get(url)
-time.sleep(10)  # in seconds
+driver.implicitly_wait(10)  # in seconds
 
 for k in rankings:
     top10ranking[k] = buildrank(k)
