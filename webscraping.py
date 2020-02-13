@@ -1,3 +1,5 @@
+# -*- encoding: utf-8 -*-
+
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -58,5 +60,5 @@ driver.quit()
 
 # Dump and Save to JSON file (Converter e salvar em um arquivo JSON)
 with open('ranking.json', 'w', encoding='utf-8') as jp:
-    js = json.dumps(top10ranking)
+    js = json.dumps(top10ranking, indent=4)
     jp.write(js)
