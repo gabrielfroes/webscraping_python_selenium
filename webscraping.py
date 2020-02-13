@@ -1,4 +1,5 @@
-import time
+# -*- encoding: utf-8 -*-
+
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -50,7 +51,7 @@ option.headless = True
 driver = webdriver.Firefox(options=option)
 
 driver.get(url)
-time.sleep(10)  # in seconds
+driver.implicitly_wait(10)  # in seconds
 
 for k in rankings:
     top10ranking[k] = buildrank(k)
@@ -58,7 +59,6 @@ for k in rankings:
 driver.quit()
 
 # Dump and Save to JSON file (Converter e salvar em um arquivo JSON)
-js = json.dumps(top10ranking)
-fp = open('ranking.json', 'w')
-fp.write(js)
-fp.close()
+with open('ranking.json', 'w', encoding='utf-8') as jp:
+    js = json.dumps(top10ranking, indent=4)
+    jp.write(js)
