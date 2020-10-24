@@ -52,6 +52,7 @@ driver = webdriver.Firefox(options=option)
 
 driver.get(url)
 driver.implicitly_wait(10)  # in seconds
+driver.find_element_by_xpath('//*[@id="onetrust-accept-btn-handler"]').click() # Closes cookie's authorization popup
 
 for k in rankings:
     top10ranking[k] = buildrank(k)
