@@ -1,0 +1,14 @@
+beautifulsoup4==4.9.3
+certifi==2020.12.5
+chardet==3.0.4
+idna==2.5
+lxml==4.6.2
+numpy==1.20.1
+pandas==1.2.2
+python-dateutil==2.8.1
+pytz==2021.1
+requests2==2.16.0
+selenium==3.141.0
+six==1.15.0
+soupsieve==2.2
+urllib3==1.21.1

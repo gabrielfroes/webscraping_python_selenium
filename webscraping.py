@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-
+import time
 import requests
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -19,6 +19,12 @@ rankings = {
     'steals': {'field': 'STL', 'label': 'STL'},
     'blocks': {'field': 'BLK', 'label': 'BLK'},
 }
+
+
+def acceptTerms():
+    acceptBt = driver.find_element_by_id('onetrust-accept-btn-handler')
+    acceptBt.click()
+    return
 
 
 def buildrank(type):
@@ -51,7 +57,11 @@ option.headless = True
 driver = webdriver.Firefox(options=option)
 
 driver.get(url)
-driver.implicitly_wait(10)  # in seconds
+driver.implicitly_wait(10) # in seconds
+
+acceptTerms()
+time.sleep(10) #in seconds
+
 
 for k in rankings:
     top10ranking[k] = buildrank(k)
