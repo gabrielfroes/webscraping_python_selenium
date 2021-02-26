@@ -1,4 +1,14 @@
 geckodriver.log
 ranking.json
+<<<<<<< HEAD
 venv/
 geckodriver
+=======
+
+# ignore directory .vscode/ and venv/
+.vscode/
+venv/
+
+# Ignore driver
+geckodriver.exe
+>>>>>>> cb44b416d10cc08a9b4929444fa07fc84541c90b

@@ -24,43 +24,19 @@ What things you need to install the software and how to install them
 
 A step by step series of examples that tell you how to get a development env running
 
-Install the following Python libraries:
+### Install the following Python libraries:
 
-### requests
+ * **requests2** - Requests is the only Non-GMO HTTP library for Python, safe for human consumption;
+ * **pandas** - A great Python Data Analysis Library;
+ * **lxml** - Library for processing XML and HTML;
+ * **beautfulsoup4** - Library for pulling data out of HTML and XML files;
+ * **selenium** - An API to write functional/acceptance tests using Selenium WebDriver.
 
+With:
 ```
-pip install requests2
-```
-
-### Pandas
-
-A great Python Data Analysis Library
-
-```
-pip install pandas
+pip install -r requirements.txt
 ```
 
-### lxml
-
-Library for processing XML and HTML
-
-```
-pip install lxml
-```
-### BeautifulSoup
-
-Library for pulling data out of HTML and XML files
-
-```
-pip install beautifulsoup4
-```
-### Selenium
-
-An API to write functional/acceptance tests using Selenium WebDriver
-
-```
-pip install selenium
-```
 ### Geckodriver 
 
 [You can find install instructions in the official repository.](https://github.com/mozilla/geckodriver/releases)
