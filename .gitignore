@@ -1,2 +1,4 @@
 geckodriver.log
 ranking.json
+venv/
+geckodriver
