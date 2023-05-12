@@ -1,3 +1,5 @@
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/gabrielfroes/webscraping_python_selenium)
+
 # Web Scraping JavaScript Generated Pages with Python
 
 This project was created just for educational proposes.
