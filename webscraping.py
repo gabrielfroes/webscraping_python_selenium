@@ -25,7 +25,11 @@ def buildrank(type):
 
     field = rankings[type]['field']
     label = rankings[type]['label']
-
+    
+    # Click on the Cookies pop-up
+    driver.find_element_by_xpath(
+        "//div[@class='banner-actions-container']//button[@id='onetrust-accept-btn-handler']").click()
+    
     driver.find_element_by_xpath(
         f"//div[@class='nba-stat-table']//table//thead//tr//th[@data-field='{field}']").click()
 
